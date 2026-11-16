@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wience Store - Catálogo estático</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f8f9fa; color: #212529; }
+        nav { background: #212529; color: #fff; padding: 14px 24px; font-weight: bold; }
+        header { background: #fff; border-bottom: 1px solid #dee2e6; padding: 24px; }
+        header h1 { margin: 0 0 4px; }
+        header p { margin: 0; color: #6c757d; }
+        main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+        .card { background: #fff; border-radius: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.1); padding: 24px; display: flex; flex-direction: column; }
+        .card h2 { font-size: 1.1rem; margin: 0 0 8px; }
+        .card p { color: #6c757d; flex-grow: 1; margin: 0 0 12px; }
+        .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: .8rem; color: #fff; background: #198754; margin-bottom: 12px; align-self: flex-start; }
+        .badge.off { background: #dc3545; }
+        .price { font-size: 1.25rem; font-weight: bold; color: #198754; }
+        .old { text-decoration: line-through; color: #6c757d; font-size: .85rem; display: block; }
+        footer { background: #212529; color: #fff; text-align: center; padding: 24px; margin-top: 32px; }
+    </style>
+</head>
+<body>
+    <nav>Wience Store</nav>
+
+    <header>
+        <h1>Wience Store</h1>
+        <p>Catálogo estático: HTML puro, sem PHP, sem banco de dados e sem JavaScript.</p>
+    </header>
+
+    <main>
+        <h2>Produtos</h2>
+        <div class="grid">
+            <article class="card">
+                <h2>Notebook 14" 16 GB</h2>
+                <p>Notebook leve para estudo e trabalho, com SSD de 512 GB.</p>
+                <span class="badge">Em estoque: 12</span>
+                <div><span class="price">R$ 3.499,90</span></div>
+            </article>
+
+            <article class="card">
+                <h2>Smartphone 128 GB</h2>
+                <p>Tela de 6,5", câmera dupla e bateria de longa duração.</p>
+                <span class="badge">Em estoque: 30</span>
+                <div><small class="old">R$ 1.999,90</small><span class="price">R$ 1.599,90</span></div>
+            </article>
+
+            <article class="card">
+                <h2>Fone Bluetooth</h2>
+                <p>Fone sem fio com cancelamento de ruído e estojo de carga.</p>
+                <span class="badge">Em estoque: 45</span>
+                <div><span class="price">R$ 249,90</span></div>
+            </article>
+
+            <article class="card">
+                <h2>Teclado Mecânico</h2>
+                <p>Teclado ABNT2 com switches mecânicos e iluminação RGB.</p>
+                <span class="badge">Em estoque: 18</span>
+                <div><span class="price">R$ 329,90</span></div>
+            </article>
+
+            <article class="card">
+                <h2>Mouse Sem Fio</h2>
+                <p>Mouse ergonômico com sensor óptico de 1600 DPI.</p>
+                <span class="badge">Em estoque: 60</span>
+                <div><span class="price">R$ 89,90</span></div>
+            </article>
+
+            <article class="card">
+                <h2>Monitor 24" Full HD</h2>
+                <p>Painel IPS, 75 Hz, entradas HDMI e DisplayPort.</p>
+                <span class="badge off">Esgotado</span>
+                <div><small class="old">R$ 999,90</small><span class="price">R$ 799,90</span></div>
+            </article>
+
+            <article class="card">
+                <h2>Webcam Full HD</h2>
+                <p>Webcam 1080p com microfone embutido e correção de luz.</p>
+                <span class="badge">Em estoque: 22</span>
+                <div><span class="price">R$ 199,90</span></div>
+            </article>
+
+            <article class="card">
+                <h2>SSD 1 TB NVMe</h2>
+                <p>Unidade de estado sólido com leitura de até 3.500 MB/s.</p>
+                <span class="badge">Em estoque: 35</span>
+                <div><span class="price">R$ 459,90</span></div>
+            </article>
+
+            <article class="card">
+                <h2>Cadeira Gamer</h2>
+                <p>Cadeira reclinável com apoio lombar e braços ajustáveis.</p>
+                <span class="badge">Em estoque: 8</span>
+                <div><span class="price">R$ 1.099,90</span></div>
+            </article>
+        </div>
+    </main>
+
+    <footer>Wience Store &copy; 2026 - Todos os direitos reservados</footer>
+</body>
+</html>
